@@ -1,0 +1,5 @@
+html {
+    font-family: var(--df-font-family-base);
+    background-color: var(--df-color-gray-lightest);
+    font-weight: 500;
+}

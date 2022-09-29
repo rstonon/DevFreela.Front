@@ -1,0 +1,40 @@
+.df-wrapper {
+    max-width: var(--df-main-wrapper); /* 1366 px */
+    margin: 0 auto;
+}
+
+.df-wrapper > .df-main-content {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: var(--df-header-size);
+}
+
+.df-wrapper > .df-main-content > .back-btn {
+    position: fixed;
+    top: calc( var(--df-header-size) + 30px );
+    font-size: calc( var(--df-font-size-base) + 50px );
+    cursor: pointer;
+    color: var(--df-color-black);
+    text-decoration: none;
+}
+
+.df-wrapper > .df-main-content.-two-cols {
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.df-wrapper > .df-main-content > .right {
+    overflow: hidden;
+    position: relative;
+    height: calc(100vh - var(--df-header-size));
+}
+
+.df-wrapper > .df-main-content > .right > .image {
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    min-width: 100%;
+    transform: translateX(-50%);
+}

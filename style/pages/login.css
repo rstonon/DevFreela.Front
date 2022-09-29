@@ -1,0 +1,47 @@
+.df-login > .df-wrapper > .df-main-content > .left {
+    max-width: 450px;
+    margin: auto;
+}
+
+.df-login > .df-wrapper > .df-main-content > .left > .main-title {
+    font-family: var(--df-font-family-base);
+    color: var(--df-color-black);
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+.df-login > .df-wrapper > .df-main-content > .left > .main-title > .up {
+    font-size: calc( var(--df-font-size-base) + 38px );
+    display: block;
+    margin-bottom: 8px;
+}
+
+.df-login > .df-wrapper > .df-main-content > .left > .main-title > .down {
+    font-size: calc( var(--df-font-size-base) + 22px );
+    
+}
+
+.df-login > .df-wrapper > .df-main-content > .left > .radio-buttons {
+    margin-bottom: 42px;
+}
+
+.df-login > .df-wrapper > .df-main-content > .left > .radio-buttons > .title {
+    font-family: var(--df-font-family-base);
+    font-size: calc( var(--df-font-size-base) + 8px );
+    color: var(--df-color-black);
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.df-login > .df-wrapper > .df-main-content > .left > .radio-buttons > .buttons > .df-radio {
+    margin-right: 70px;
+}
+
+.df-login > .df-wrapper > .df-main-content > .left > .steps {
+    font-family: var(--df-font-family-base);
+    font-size: calc( var(--df-font-size-base) + 4px );
+    color: var(--df-color-gray);
+    display: block;
+    font-weight: 800;
+    margin-bottom: 12px;
+}

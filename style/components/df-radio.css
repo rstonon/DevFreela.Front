@@ -1,0 +1,53 @@
+/* CLASSE BASE df-radio */
+
+.df-radio {
+    font-family: var(--df-font-family-base);
+    font-size: calc( var(--df-font-size-base) + 8px );
+    position: relative;
+    padding-left: 32px;
+    padding-top: 2px;
+    cursor: pointer;
+}
+
+/* esconde o radio button nativo do browser */
+.df-radio > input {
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+}
+
+/* estilo base do nosso checkmark */
+.df-radio > .checkmark {
+    display: inline-block;
+    border-radius: 50%;
+    height: 22px;
+    width: 22px;
+    border: 2px solid var(--df-color-black);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Estiliza e preencher o fundo do checkmark quando radio button = checked */
+.df-radio > input:checked ~ .checkmark {
+    background-color: white;
+    border: 2px solid var(--df-color-primary);
+}
+
+/* Estilo base do Ponto */
+.df-radio > .checkmark:after {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: absolute;
+    content: "";
+    top: 3px;
+    left: 3px;
+    background-color: var(--df-color-primary);
+    display: none;
+}
+
+/* Mostra o ponto quando radio button = checked */
+.df-radio > input:checked ~ .checkmark:after {
+    display: block;
+}

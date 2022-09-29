@@ -1,0 +1,16 @@
+.df-project-create-edit > .df-wrapper > .df-main-content > .left > .main-title {
+    color: var(--df-color-black);
+    font-size: calc( var(--df-font-size-base) + 32px );
+    font-weight: 800;
+    max-width: 415px;
+    margin-bottom: 45px;
+}
+
+.df-project-create-edit > .df-wrapper > .df-main-content > .left > .df-button {
+    margin-top: 40px;
+}
+
+.df-project-create-edit > .df-wrapper > .df-main-content > .left {
+    max-width: 368px;
+    margin: auto;
+}

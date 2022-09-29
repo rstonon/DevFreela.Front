@@ -1,0 +1,73 @@
+.df-header {
+    height: var(--df-header-size);
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.15);
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+
+.df-header > .wrapper {
+    max-width: var(--df-main-wrapper);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.df-header > .wrapper.-has-user {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+}
+
+/* LOGO */
+
+.df-header > .wrapper > .logo-wrapper {
+    height: var(--df-header-size);
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.df-header > .wrapper > .logo-wrapper > .logo {
+    height: 100%;
+}
+
+/* USER */
+
+.df-header > .wrapper > .user {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.df-header > .wrapper > .user > .user-info {
+    text-align: right;
+}
+
+.df-header > .wrapper > .user > .user-info > .name {
+    font-size: calc( var(--df-font-size-base) + 4px );
+    font-weight: 800;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.df-header > .wrapper > .user > .user-info > .role {
+    font-size: calc( var(--df-font-size-base) + 2px );
+    font-weight: 400;
+    display: block;
+}
+
+.df-header > .wrapper > .user > .user-photo {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    border: 1px solid var(--df-color-primary);
+    overflow: hidden;
+    margin-left: 12px;
+}
+
+.df-header > .wrapper > .user > .user-photo > img {
+    height: 100%;
+    width: 100%;
+}

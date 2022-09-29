@@ -1,0 +1,25 @@
+.df-list > .df-wrapper > .df-main-content > .title-button {
+    margin-top: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.df-list > .df-wrapper > .df-main-content > .title-button > .title {
+    font-size: calc( var(--df-font-size-base) + 30px );
+    font-weight: 700;
+}
+
+.df-list > .df-wrapper > .df-main-content > .title-button > .button-wrapper > button {
+    font-size: calc( var(--df-font-size-base) + 4px );
+    font-weight: 400;
+    transition: background-color 0.2s;
+}
+
+.df-list > .df-wrapper > .df-main-content > .title-button > .button-wrapper > button:hover {
+    background-color: var(--df-color-primary-light);
+}
+
+.df-list > .df-wrapper > .df-main-content > .table-wrapper {
+    margin-top: 32px;
+}
