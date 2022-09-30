@@ -41,7 +41,7 @@
 
         <!-- TRUMPS -->
         
-
+        <script src="scripts/login.js"></script>
     </head>
 <body>
     <div class="df-login">
@@ -54,9 +54,7 @@
                 </div>
             </header>
             <main class="df-main-content -two-cols">
-                <div class="left">
-
-                    <span class="steps">PASSO 1 DE 2</span>
+                <form class="left" onsubmit="cadastrar()" action="javascript:void(0)">
 
                     <h1 class="main-title">
                         <span class="up">Olá!</span>
@@ -69,26 +67,25 @@
                         <div class="buttons">
                             <label class="df-radio">
                                 Dev
-                                <input type="radio" id="dev" name="cargo">
+                                <input type="radio" id="dev" name="role">
                                 <span class="checkmark"></span>
                             </label>
                             <label class="df-radio">
                                 Cliente
-                                <input type="radio" id="cliente" name="cargo">
+                                <input type="radio" id="cliente" name="role">
                                 <span class="checkmark"></span>
                             </label>
                         </div>
                     </div>
 
-                    <input type="text" class="df-input" placeholder="Nome Completo">
-                    <input type="date" class="df-input" placeholder="Data de Nascimento">
-                    <input type="email" class="df-input" placeholder="E-mail">
-                    <input type="password" class="df-input" placeholder="Senha">
+                    <input required id="fullname" type="text" class="df-input" placeholder="Nome Completo">
+                    <input required id="birthdate" type="date" class="df-input" placeholder="Data de Nascimento">
+                    <input required id="email" type="email" class="df-input" placeholder="E-mail">
+                    <input required id="password" type="password" class="df-input" placeholder="Senha">
 
-                    <button class="df-button">Continuar</button>
+                    <button type="submit" class="df-button">Continuar</button>
 
-
-                </div>
+                </form>
                 <div class="right">
                     <img src="assets/image/bg-cubes.png" alt="Fundo de decoração com 3 cubos com fundo gradiente das cores do arco íris" class="image">
                 </div>
