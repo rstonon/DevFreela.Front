@@ -40,6 +40,10 @@
         <link rel="stylesheet" href="style/pages/list.css">
 
         <!-- TRUMPS -->
+
+        <!-- SCRIPTS -->
+        <script src="scripts/list.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         
 </head>
 <body>
@@ -55,8 +59,8 @@
 
                     <div class="user">
                         <div class="user-info">
-                            <span class="name">Rafael Tonon</span>
-                            <span class="role">Desenvolvedor</span>
+                            <span class="name" id="name"></span>
+                            <span class="role" id="role"></span>
                         </div>
                         <div class="user-photo">
                             <img src="https://www.psicologo.com.br/wp-content/uploads/sou-uma-pessoa-boa-ou-nao-1024x538.jpg" alt="Foto do usuário">
@@ -71,7 +75,7 @@
                     <h1 class="title">Projetos</h1>
 
                     <div class="button-wrapper">
-                        <button class="df-button -small">Novo Projeto</button>
+                        <a href="project-create-edit.html" class="df-button -small">Novo Projeto</a>
                     </div>
                 </div>
                 <div class="table-wrapper">
@@ -83,29 +87,9 @@
                                 <div>Ações</div>
                             </div>
                         </div>
-                        <div class="body">
-                            <div class="row">
-                                <div class="title-description">
-                                    <h6 class="title">Plataforma de Educacação</h6>
-                                    <p class="description">Uma bela descrição do projeto você pode encontrar nesta parte da tabela</p>
-                                </div>
-                                <div class="price">R$ 9999999,99</div>
-                                <div class="actions">
-                                    <span class="edit material-symbols-outlined">edit</span>
-                                    <span class="delete material-symbols-outlined">delete</span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="title-description">
-                                    <h6 class="title">Plataforma de Educacação</h6>
-                                    <p class="description">Uma bela descrição do projeto você pode encontrar nesta parte da tabela</p>
-                                </div>
-                                <div class="price">R$ 9999999,99</div>
-                                <div class="actions">
-                                    <span class="edit material-symbols-outlined">edit</span>
-                                    <span class="delete material-symbols-outlined">delete</span>
-                                </div>
-                            </div>
+                        <div class="body" id="table-body">
+                            
+                            
                         </div>
                     </div>
                 </div>

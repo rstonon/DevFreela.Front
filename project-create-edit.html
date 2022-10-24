@@ -42,6 +42,7 @@
 
         <!-- SCRIPTS -->
         <script src="scripts/project-create-edit.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     </head>
 <body>
     <div class="df-project-create-edit">
@@ -59,20 +60,20 @@
                     keyboard_arrow_left
                 </a>
                 
-                <div class="left">
+                <form class="left" onsubmit="createOrEdit()" action="javascript:void(0)">
 
 
                     <h1 class="main-title" id="main-title">
                         
                     </h1>
 
-                    <input type="text" class="df-input" placeholder="Título">
-                    <input type="text" class="df-input" placeholder="Custo Total">
-                    <textarea class="df-input" placeholder="Descrição"></textarea>
+                    <input required id="title" type="text" class="df-input" placeholder="Título">
+                    <input required id="totalCost" type="text" class="df-input" placeholder="Custo Total">
+                    <textarea required id="description" class="df-input" placeholder="Descrição"></textarea>
 
-                    <button class="df-button" id="action-button"></button>
+                    <button type="submit" class="df-button" id="action-button"></button>
 
-                </div>
+                </form>
                 <div class="right">
                     <img src="assets/image/bg-float-cubes.png" alt="Fundo de decoração com 3 cubos com fundo gradiente das cores do arco íris" class="image">
                 </div>

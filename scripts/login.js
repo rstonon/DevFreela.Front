@@ -15,10 +15,13 @@ function checkIfAnyRoleIsChecked() {
 function cadastrar() {
     // Se ele entrou aqui, o form está válido
 
-
     // Pegar as informações
     if (checkIfAnyRoleIsChecked() === false) {
-        alert('Marque alguma Role');
+        Swal.fire({
+            icon: 'error',
+            title: 'Atenção...',
+            text: 'Favor marcar alguma role!',
+          })
         return;
     }
 
@@ -39,6 +42,33 @@ function cadastrar() {
         }
     }).then(response => response.json())
     .then(response => {
-        alert('Cadastrado com sucesso!')
+        Swal.fire(
+            'Bom trabalho!',
+            'Cadastrado com sucesso!',
+            'success'
+          )
+
+          Swal.fire({
+            title: 'Bom trabalho!',
+            text: "Cadastrado com sucesso!",
+            icon: 'success',
+            showCancelButton: false,
+            confirmButtonColor: '#3085d6',
+            confirmButtonText: 'Ok'
+          }).then((result) => {
+            if (result.isConfirmed) {
+
+                localStorage.setItem("user.name", response.fullname);
+                localStorage.setItem("role", response.role === "dev" ? "Desenvolvedor" : "Cliente");
+                localStorage.setItem("idClient", response.id);
+
+                window.location.href = "list.html";
+            }
+          })
+        
+        
+
+        // Redirect para List
+
     });
 }
